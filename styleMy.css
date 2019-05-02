@@ -1,23 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Dokdo|Lobster|Roboto|Rubik|Dokdo');
+@media only screen
+    and (min-width:1224px)
+{
 body{
     margin: 0px,0px,0px,0px;
-    background: whitesmoke;
-   }
-
-.fonImage{ 
-    position: absolute;
     width: 100%;
-    height:500px;
-    opacity: 0.3;
-    background-image: url(circus.jpg);
-    bottom: 0px;
-    border: 0px;
-}
+    background-size:cover;
+    background-image: url(Untitled-2.jpg);
+    background-repeat: no-repeat no-repeat;
+   
+    }
+
+
+    
 .adress
 {
-    margin: 0;
-    border-top: 0;
-   padding-top: 0px;
+        border-top: 0;
+    padding-top: 0px;
     border: 0;
     color: #a00bdb;
     font-family: Lobster;
@@ -26,24 +25,21 @@ body{
     
 }
 
-p{
+.zagolovok{
     
-    margin: 0;
     border-top: 0;
     padding-top: 0px;
     border: 0;
-    top:0px;
     color: white;
     background: linear-gradient(45deg, #ffffff 0%, #d616f7 25%, #d616f7 50%,  #a00bdb 75%, #a00bdb 100%);
     font-family: Rubik;
     text-align: center;
     font-size: 100px;
     text-shadow: 3px 0 rgba(233, 233, 233, .5), 6px 0 rgba(233, 233, 233, .4), 9px 0 rgba(233, 233, 233, .3), 12px 0 rgba(233, 233, 233, .2), 15px 0 rgba(233, 233, 233, .1);
+    opacity: 0.8;
     
 }
 
-p span{
-    padding-top: 0px;
-    padding: 0px;
 }
+    
 
