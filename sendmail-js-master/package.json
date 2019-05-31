@@ -1,0 +1,31 @@
+{
+  "name": "sendmail-js",
+  "version": "2.0.3",
+  "description": "Универсальный плагин отправки HTML-форм средствами PHP, jQuery, AJAX",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WahaWaher/sendmail-js.git"
+  },
+  "author": "WahaWaher",
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "jquery",
+    "ajax",
+    "mail",
+    "sendmail"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-header-comment": "^0.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "rename": "^1.0.4"
+  }
+}
