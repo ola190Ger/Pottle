@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="favicon.png"type="image/png">
     <title>FlyDance</title>
@@ -9,25 +10,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
     <script src="galleria/galleria-1.4.2.min.js"></script>
+    <script scr="index.js"></script>
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="dist/jquery.sendmail.js"></script>
 <!--палитры
 https://colorscheme.ru/#57420vSvvv5wG
-https://colorscheme.ru/#57620vSvvv5wG
+
 -->  
 </head>
 <body>
-<!--<script>
+
+<!-- проверка подключения галлереи
+            <script>
              if (Galleria) { $("body").text('Galleria works') };
 </script>
 -->
- <!--border-bottom:240px solid green;
-   border-left:1920px solid transparent;
-   -->
+ 
+   
 <div class="zagolovok" >
    <p><img src="favicon.png" alt = "Circle" weidth="60" height="60" align="left">FlyDanceStudio</p>
 </div> 
   
-  
-
 
  <div class="Block">
     <div class="col-sm-4">
@@ -37,9 +40,40 @@ https://colorscheme.ru/#57620vSvvv5wG
     </div>
          <div class="col-sm-4">
           <img src="circle%20(2).jpg" alt="circle" >
-          <form action="">
-              <p style="text-align: center"><button>Записаться на пробную тренировку</button></p>
+         
+         <!-- для отправки без php
+         <form id="">
+     
+              <p style="text-align: center">
+                       
+             
+               
+              <input type="text" id="name" placeholder="Имя" recuired>
+              <input type="phone" id="phone" placeholder="Номер" recuired>
+              
+             
+                  <button type="submit">Записаться на пробную тренировку</button></p>
+              -->
+        
+         
+          <form class="exemple" action="mail/sendmail.php" method="POST">
+     
+              <p style="text-align: center">
+                       
+             
+               
+              <input type="text" name="Имя" placeholder="Имя" recuired>
+              <input type="text" name ="phone" placeholder="Номер" recuired>
+              
+             
+                  <button type="submit" value="Отправить">Записаться на пробную тренировку</button></p>
+              
+              
+             <div class="results"></div>
+             
+              <img src="loader.gif" id="loader" alt="">
           </form>
+         
       </div>
       <div class="col-sm-4">
            <p>У вас есть возможность  просто попробовать.</p> 
@@ -75,7 +109,7 @@ https://colorscheme.ru/#57620vSvvv5wG
     </script>
     <p> <br>С целью безопасности на полу раскладываются маты. <br> Опытные тренеры подбирают упражнения и помогают им обучиться с учетом ваших физических возможностей. <br> Регулярно занимаясь, уже в очень скором времени вы сможете поставить свой оригинальный танец. <br>  </p>
     
-             <!--
+             <!-- кнопка подробностей
              <form action="">
               <p style="text-align: center"><button>Узнать больше</button></p>
           </form>
